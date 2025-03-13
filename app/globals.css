@@ -13,11 +13,14 @@
     --foreground: #EFFFEF;
   }
 }
-
+@font-face {
+  font-family: SFPRODISPLAYREGULAR;
+  src: url(../fonts/sfprodisplay/SFPRODISPLAYREGULAR.OTF);
+}
 body {
   color: var(--foreground );
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:SFPRODISPLAYREGULAR;
 }
 
 
@@ -54,11 +57,11 @@ body {
   }
 
   .contact-button {
-    @apply px-4 py-2 border-[1px] border-black rounded-2xl text-black text-base no-underline ;
+    @apply px-4 py-2 border-[1px] border-green-950 rounded-2xl text-black text-base no-underline ;
   }
 
   .contact-button:hover {
-    @apply bg-gray-600 text-white;
+    @apply bg-green-300 text-white;
   }
 
 }
